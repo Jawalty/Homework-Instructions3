@@ -247,14 +247,21 @@ Using both the visualization and summary statistics, describe the distribution o
 
 
 ```{r review-scores-viz, eval = FALSE}
-# Your code here
+ggplot(data = edibnb, mapping = aes(x = review_scores_rating)) +
+  geom_histogram(binwidth = 5) +
+  facet_wrap(~neighbourhood) +
+  labs(
+    x = "Review Score Rating",
+    y = "Count",
+    title = "Distribution of Review Scores by Neighbourhood"
+  )
 ```
 
 *Interpretation (2-3 sentences):*
 
-- How do Airbnb guests rate properties in general (are ratings generally high, low, or varied)?
-- How do the neighborhoods compare to each other?
-- Are there any neighborhoods that stand out as having particularly high or low ratings?
+- How do Airbnb guests rate properties in general (are ratings generally high, low, or varied)? Most ratings across the board are within the 80-100 range
+- How do the neighborhoods compare to each other? The only major differnece is the counts of reviews rather than the review patterns themselves.
+- Are there any neighborhoods that stand out as having particularly high or low ratings? Leith and NA have a high amount of 100 score ratings.
 
 *After completing Exercise 5:*
 
