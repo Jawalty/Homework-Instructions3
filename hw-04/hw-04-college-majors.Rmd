@@ -1,6 +1,6 @@
 ---
 title: "HW 04 - What should I major in?"
-author: "[Your Name]"
+author: "Jackson Walterman"
 output: 
   tufte::tufte_html:
     css: ../lab.css
@@ -39,7 +39,7 @@ We should also note that there are many considerations that go into picking a ma
 In this assignment, you will practice:
 
 - Using `arrange()`, `select()`, and `filter()` to explore data
-- Creating and interpreting histograms with different binwidths
+- Creating and interpreting histograms with different bindwidths
 - Calculating summary statistics for distributions
 - Using `mutate()` with logical operators to create new variables
 - Faceting visualizations to compare groups
